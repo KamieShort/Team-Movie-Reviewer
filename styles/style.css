@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #357cc4;
-    font-family: 'Balsamiq Sans', cursive;
+    /* font-family: 'Balsamiq Sans', cursive; */
     color: coral;
 }
 
