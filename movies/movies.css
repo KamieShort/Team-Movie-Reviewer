@@ -1,0 +1,13 @@
+.movie-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75vw;
+}
+
+.movie-cover {
+    height: 300px;
+    margin: 10px;
+    border-radius: 8px;
+}
