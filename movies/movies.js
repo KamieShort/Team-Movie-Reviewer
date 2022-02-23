@@ -6,9 +6,12 @@ checkAuth();
 const logoutButton = document.getElementById('logout');
 const movieContainer = document.querySelector('.movie-container');
 
+
 logoutButton.addEventListener('click', () => {
     logout();
 });
+
+
 
 window.addEventListener('load', async () => {
     const movies = await fetchMovies();
