@@ -1,0 +1,67 @@
+* {
+    border: 1px solid black;
+}
+
+#movie-detail-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 2fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    ".detail-image .detail-title"
+    ".detail-image .detail-year"
+    ".detail-image .detail-genre"
+    ".detail-image .detail-director"
+    ".detail-image .detail-description";
+}
+
+img {
+    width: 100px;
+}
+
+
+.detail-image {
+    grid-column: 1;
+    grid-row: 1 / 6;
+    width: 100px;
+}
+
+.detail-title {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.detail-year {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.detail-genre {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.detail-director {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.detail-description {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+#add-review-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas:
+    ".add-review .add-review"
+    ".add-rating .submit-review-button";
+}
+
+.add-review {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
