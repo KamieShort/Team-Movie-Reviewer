@@ -7,7 +7,7 @@ export function renderMovies(movie) {
     img.classList.add('movie-cover');
     p.classList.add('movie-title');
 
-    img.src = `${movie.image}`;
+    img.src = movie.image;
     p.textContent = movie.title;
 
     div.append(img, p);
