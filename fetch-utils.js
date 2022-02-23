@@ -45,6 +45,11 @@ export async function fetchMovies() {
     return checkError(resp);
 }
 
+export async function fetchMovieById(id) {
+    const resp = await client.from('movies').select().match({ id: id }).single();
+    return checkError(resp);
+}
+
 function checkError({ data, error }) {
     return error ? console.error(error) : data;
 }

@@ -1,4 +1,4 @@
-import { checkAuth, logout, fetchMovies } from '../fetch-utils.js';
+import { checkAuth, logout, fetchMovies, fetchMovieById } from '../fetch-utils.js';
 import { renderMovies } from '../render-utils.js';
 
 checkAuth();
@@ -15,8 +15,15 @@ window.addEventListener('load', async () => {
 
     for (let movie of movies) {
         const movieEl = renderMovies(movie);
+        // const params
+        movieEl.addEventListener('click', async () => {
+            const page = await fetchMovieById(movie.id);
+            location.replace(`../reviews/?id=${page.id}`);
+            // console.log('click');
+        });
 
         movieContainer.append(movieEl);
     }
+
     return movieContainer;
 });

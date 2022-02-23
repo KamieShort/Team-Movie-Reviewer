@@ -13,3 +13,5 @@ export function renderMovies(movie) {
     div.append(img, p);
     return div;
 }
+
+
