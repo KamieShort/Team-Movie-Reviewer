@@ -1,1 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #357cc4;
+    font-family: 'Balsamiq Sans', cursive;
+    color: coral;
+}
 
+/* test change  */
