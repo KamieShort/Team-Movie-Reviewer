@@ -4,7 +4,7 @@ const test = QUnit.test;
 test('time to test a function', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<div class="movie"><img class="movie-cover" src="../assets/jurassicpark.jpg"><p class="movie-title">Jurassic Park</p></div>`;
+    const expected = `<div class="movie"><img class="movie-cover" src="../assets/jurassicpark.jpg"></div>`;
 
     //Act
     // Call the function you're testing and set the result to a const
