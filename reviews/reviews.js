@@ -1,4 +1,4 @@
-import { checkAuth, logout, fetchMovieById } from '../fetch-utils.js';
+import { checkAuth, logout, fetchMovieById, fetchReview } from '../fetch-utils.js';
 import { renderMovie } from '../render-utils.js';
 
 checkAuth();
@@ -13,7 +13,6 @@ logoutButton.addEventListener('click', () => {
 
 homeButton.addEventListener('click', () => {
     return (window.location.href = '../index.html');
-  
 });
 
 window.addEventListener('load', async () => {
@@ -21,6 +20,5 @@ window.addEventListener('load', async () => {
     const id = +params.get('id');
     const movie = await fetchMovieById(id);
     body.append(renderMovie(movie));
+    await fetchReview(id);
 });
-
-
