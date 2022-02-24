@@ -2,6 +2,12 @@
     border: 1px solid black;
 }
 
+#main-body {
+    width: 70%;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
 #movie-detail-container {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -65,3 +71,13 @@ img {
     grid-row: 1;
 }
 
+#review-container {
+    width: 70%;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+}
