@@ -5,9 +5,15 @@ checkAuth();
 
 const logoutButton = document.getElementById('logout');
 const body = document.getElementById('main-body');
+const homeButton = document.getElementById('home');
 
 logoutButton.addEventListener('click', () => {
     logout();
+});
+
+homeButton.addEventListener('click', () => {
+    return (window.location.href = '../index.html');
+  
 });
 
 window.addEventListener('load', async () => {
@@ -17,4 +23,5 @@ window.addEventListener('load', async () => {
     console.log(movie);
     body.append(renderMovie(movie));
 });
+
 
