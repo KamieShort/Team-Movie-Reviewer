@@ -26,6 +26,8 @@ export function redirectIfLoggedIn() {
     }
 }
 
+// console.log('hi');
+
 export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
 
@@ -55,6 +57,24 @@ export async function fetchMovieById(id) {
     const resp = await client.from('movies').select().match({ id: id }).single();
     return checkError(resp);
 }
+
+export async function fetchReview(id) {
+    const resp = await client.from('critics').select(`*, movies (*)`).match({ movie_id: id });
+    console.log(resp);
+    return checkError(resp);
+}
+
+export async function createReview(review) {
+    const resp = await client.from('critics').insert(review);
+    console.log();
+    return checkError(resp);
+    // need to create form and validate this works
+}
+
+
+
+
+
 
 function checkError({ data, error }) {
     return error ? console.error(error) : data;
