@@ -1,0 +1,37 @@
+.movie-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75vw;
+}
+
+.movie-cover {
+    height: 300px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.header{
+    /* background-color: rgb(59, 44, 29); */
+    color: white;
+    text-align: right;
+    
+}
+body{
+    /* background-color: rgb(53, 47, 47); */
+    background-image: url('../assets/background-movies.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#logout{
+    background-color: #5f5e5e5d;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+}
