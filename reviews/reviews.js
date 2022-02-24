@@ -23,5 +23,3 @@ window.addEventListener('load', async () => {
     console.log(movie);
     body.append(renderMovie(movie));
 });
-
-
