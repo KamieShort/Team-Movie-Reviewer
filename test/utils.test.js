@@ -4,7 +4,7 @@ const test = QUnit.test;
 const movie = {
     created_at: '2022-02-23T21:52:01+00:00',
     description: "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
-    director: 'Stevgen Spielberg',
+    director: 'Steven Spielberg',
     genre: 'Sci-Fi',
     id: 7,
     image: '../assets/jurassicpark.jpg',
