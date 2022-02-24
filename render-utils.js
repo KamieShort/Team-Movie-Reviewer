@@ -25,6 +25,7 @@ export function renderMovie(movie) {
     const select = document.createElement('select');
     const option0 = document.createElement('option');
     const input = document.createElement('input');
+    // const label = document.createElement('label');
 
     main.setAttribute('id', 'main-review');
     div.setAttribute('id', 'movie-detail-container');
@@ -36,13 +37,13 @@ export function renderMovie(movie) {
     p1.textContent = movie.title.toUpperCase();
 
     p2.classList.add('detail-year');
-    p2.textContent = movie.year;
+    p2.textContent = `Year: ${movie.year}`;
 
     p3.classList.add('detail-genre');
-    p3.textContent = movie.genre;
+    p3.textContent = `Genre: ${movie.genre}`;
 
     p4.classList.add('detail-director');
-    p4.textContent = movie.director;
+    p4.textContent = `Director: ${movie.director}`;
 
     p5.classList.add('detail-description');
     p5.textContent = movie.description;
