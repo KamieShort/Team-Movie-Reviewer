@@ -23,5 +23,8 @@ window.addEventListener('load', async () => {
     console.log(movie);
     body.append(renderMovie(movie));
 });
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> aa08eb030e6569c24161a0055608502d6f3ce265
