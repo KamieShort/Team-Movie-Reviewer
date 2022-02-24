@@ -1,4 +1,4 @@
-import { checkAuth, logout, fetchMovieById } from '../fetch-utils.js';
+import { checkAuth, logout, fetchMovieById, fetchCritics } from '../fetch-utils.js';
 import { renderMovie } from '../render-utils.js';
 
 checkAuth();
@@ -16,3 +16,5 @@ window.addEventListener('load', async () => {
     const movie = await fetchMovieById(id);
     body.append(renderMovie(movie));
 });
+
+fetchCritics();

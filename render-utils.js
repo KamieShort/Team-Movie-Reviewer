@@ -75,3 +75,25 @@ export function renderMovie(movie) {
     main.append(div, form);
     return main;
 }
+
+export function renderReview(review) {
+    const div = document.createElement('div');
+    const div2 = document.createElement('div');
+    const span = document.createElement('span');
+    const span2 = document.createElement('span');
+    const p = document.createElement('p');
+
+    div.classList.add('review');
+    div2.classList.add('review-header');
+    span.textContent = review.email;
+    let stars = '*';
+    for (let i = 1; i < (review.rating + 1); i++) {
+        stars += '*';
+    }
+    span2.textContent = stars;
+    p.textContent = review.review;
+
+    div2.append(span1, span2);
+    div.append(div2, p);
+    return div;
+}
